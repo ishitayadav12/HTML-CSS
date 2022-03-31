@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+</head>
+<body>
+    <h1>this is body</h1>
+    <h6>this is h6</h6>
+
+    <script>
+        var str= "this is string";
+        console.log(str);
+        var position = str.indexOf('is');
+        console.log(position);
+
+        var char = "this is character";
+        console.log(char);
+        position=char.indexOf('character');
+        console.log(position);
+
+        //substring from a string
+        var substr = str.slice(1,6)
+        console.log(substr);
+
+        //replace
+        var replaced = str.replace('string' , 'ishita');
+        console.log(str);
+        console.log(replaced);
+
+        //concatenate
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+        var newString = str.concat('New String')
+        console.log(newString);
+
+        var char2 = str.charAt(2);
+        console.log(char2);
+        
+    </script>
+</body>
+</html>

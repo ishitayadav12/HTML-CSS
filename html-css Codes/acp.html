@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive page using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        this is a page
+    </div>
+
+    <script>
+        // alert in in-browser js - does not return anything
+        alert("this is a message")
+
+        //prompt inputs a value- returns that value 
+        let name= prompt("What is your name?" , "Guest")
+        console.log(name);
+
+        //confirm- gives warning to user before confirming action
+        let deletePost = confirm("Do you really want to delete this post?")
+        console.log(deletePost);
+
+    </script>
+</body>
+</html>

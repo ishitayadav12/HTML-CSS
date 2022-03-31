@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+            <li>item8</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "this is a string";
+        console.log(string1);
+         
+        //use let instead of var
+        //global variable
+        let a = 'u';
+        {
+           let a = 'u6'      //local variable
+            console.log(a);   //prints u6
+        }
+
+        console.log(a);       //prints u
+
+        //constant
+        const b = "this cannot be chnaged";
+        console.log(b);  //const value cannot be changed
+        //let var str can be changed
+
+        //conditional 
+        let age=34;
+        if (age>18){
+            console.log("Eligible to vote");
+        }
+        else if (age==2){
+            console.log("age is 2");
+        }
+        else{
+            console.log("Not e;eigible to vote");
+        }
+
+        //switch
+        const keys= 45;
+        switch (keys) {
+            case 4 : 
+            console.log("value -v4");
+            break;
+            case 45 : 
+            console.log("value - 45");
+            break;
+            case 42 : 
+            console.log("value - 42");
+            break;
+            case 40  : 
+            console.log("value - 40");
+            break;
+            default :
+            console.log(value - none);
+            break;
+        }
+    </script>
+    
+</body>
+</html>

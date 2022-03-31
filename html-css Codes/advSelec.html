@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selectors in CSS</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        /*target all p under div only*/
+        div p{
+            color: chartreuse;
+            background-color: coral;
+            font-size: 25px;
+        } 
+
+        /*target p after div, prvs parent id div*/
+        div + p{    
+            color: darkblue;
+            background-color: darkcyan;
+        }
+
+        /*nth child pseudo selector*/
+        li:nth-child(2n+0){
+            color: cyan;
+        }
+        li:nth-child(3n+3){
+            background-color: hotpink;
+        }
+        li:nth-child(odd){
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Advance selectors in CSS</h1>
+    <div class="container">
+        <div class="row">
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer most paragraph</p>  
+    <ul>
+        <li class="item" id="item1">item1</li>
+        <li class="item" id="item2">item2</li>
+        <li class="item" id="item3">item3</li>
+        <li class="item" id="item4">item4</li>
+        <li class="item" id="item5">item5</li>
+        <li class="item" id="item6">item6</li>
+        <li class="item" id="item7">item7</li>
+        <li class="item" id="item8">item8</li>
+        <li class="item" id="item9">item9</li>
+        <li class="item" id="item10">item10</li>
+    </ul>
+</body>
+</html>
